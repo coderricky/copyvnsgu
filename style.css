@@ -1,0 +1,157 @@
+/* css reset  */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+#content{
+    display: grid;
+    grid-template-columns: repeat(3, 0fr); 
+}
+
+#logo{
+    width: 25vw;
+    background: transparent;
+    /* border : 2px solid red; */
+    display: flex;
+    flex-direction: column;
+    padding: 50px 50px;
+}
+#logo img{
+    width: 220px;
+    margin-top: 25px;
+    margin-left: 25px;
+}
+#logo::before{
+    content: "";
+    position: absolute;
+    background-color: black;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    opacity: .92;
+}
+#form{
+    width: 57vw;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#form::before{
+    content: "";
+    position: absolute;
+    background: url(bg6.jpg) no-repeat center center/cover;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    opacity: .6;
+}
+#form img{
+    margin-top: 20px;
+    height: 100px;
+    width: 525px;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 50px;
+
+}
+.form{
+    height: 70%;
+    width: 57vw;
+    padding: 100px 50px;
+    border-right: 2px solid rgba(214, 213, 213, 0.856);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.form h2{
+    font-family: 'Roboto', sans-serif;
+    color: #174D57;
+    font-weight: normal;
+    margin: 20px;
+}
+.box input{
+    width: 27vw;
+    font-size: 15px;
+    padding: 15px;
+    padding-left: 20px;
+    margin: 15px;
+    font-size: 1rem;
+    font-weight: 700;
+    border: 2px solid white;
+    border-radius: 25px;
+    box-shadow: 5px 8px 15px rgb(51, 51, 51);
+    outline: none;
+    
+}
+.form li{
+    margin: 20px;
+    margin-left: 200px;
+    list-style: none;
+    color: #174D57;
+    font-family: 'Roboto', sans-serif;
+}
+.form li a{
+    color: #174D57;
+    font-size: large;
+    font-weight: bold;
+    text-decoration: none;
+    padding: 5px;
+}
+.form li a:hover{
+    text-decoration: underline;
+}
+.btn{
+    margin: 20px 3px;
+    padding: 10px;
+    width: 150px;
+    border: 2px solid  #174D57;
+    background: #174D57;
+    border-radius: 25px;
+    color: white;
+    font-size: 1.3rem;
+    cursor: pointer;
+    box-shadow: 5px 0 30px black;
+}
+.btn:hover{
+    border: 2px solid  orange;
+    background: orange;
+}
+#steps{
+    width: 18vw;
+    display: flex;
+    justify-content: center;
+    background-color: white;
+    height: 100vh;
+}
+#steps img{
+    height: 100vh;
+    padding: 25px;
+}
+footer{
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    color: #174D57;
+}
+footer a{
+    color: #174D57;
+    font-weight: 700;
+    text-decoration: none;
+}
+footer a:hover{
+    color: red;
+    text-decoration: underline;
+}
